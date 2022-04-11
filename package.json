@@ -3,29 +3,36 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1",
+    "yarn": "1.22.17"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.2.0",
-    "@angular/common": "~13.2.0",
     "@angular/compiler": "~13.2.0",
-    "@angular/cli": "~13.2.3",
-    "@angular/compiler-cli": "~13.2.0",
-    "@angular-devkit/build-angular": "~13.2.3",
+    "@angular/common": "~13.2.0",
     "@angular/core": "~13.2.0",
     "@angular/forms": "~13.2.0",
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "express": "^4.17.3",
+    "path": "^0.12.7",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~13.2.3",
+    "@angular/compiler-cli": "~13.2.0",
+    "@angular/cli": "~13.2.3",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "autoprefixer": "^10.4.4",
